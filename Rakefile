@@ -11,7 +11,7 @@ begin
     gem.homepage    = "http://github.com/dnclabs/client_side_validations"
     gem.authors     = ["Brian Cardarella"]
     gem.add_dependency 'validation_reflection-active_model', ' 0.3.1'
-    gem.add_dependency 'json', '1.4.3'
+    gem.add_dependency 'json', '1.4.6'
     gem.files       = Dir.glob("lib/**/*") + Dir.glob("javascript/lib/**/*") + Dir.glob("generators/**/*") + %w(LICENSE README.markdown)
     gem.test_files  = []
     
