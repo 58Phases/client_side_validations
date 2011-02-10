@@ -21,10 +21,11 @@ module ClientSideValidations
               end
               args << options
               result = form_method.bind(self).call(record_or_name_or_array, *args, &proc)
+              
               if rails3?
                 result += script.html_safe
               else
-                concat(script)
+                concat(script.html_safe)
               end
               result
             end
